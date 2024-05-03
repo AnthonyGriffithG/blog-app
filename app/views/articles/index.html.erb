@@ -4,7 +4,9 @@
 <ul>
 <% @articles.each do | article | %>
   <li>
-    <h3><%= article.title %></h3>
+    <a href="<%= article_path(article) %> ">
+      <h3><%= article.title %></h3>
+    </a>
   </li>
 <% end %>
 </ul>
