@@ -4,5 +4,7 @@
 <p><%= @article.body %></p>
 
 <a href="<%= edit_article_path(@article)%>">Edit</a>
+<br>
+<%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <br><br>
 <a href="<%= root_path %>">Go Back</a>
